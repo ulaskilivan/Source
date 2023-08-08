@@ -1,0 +1,30 @@
+.container{
+    width: 50%;
+    margin: 2rem auto 0 auto;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
+    border-radius: 2rem;
+    text-align: center;
+}
+#hello{
+    font-family: 'Tektur', cursive;
+    font-size: 10rem;
+    padding: 8rem 2rem;
+    margin: 0;
+}
+.social{
+    font-size: 2em;
+    padding-bottom: 1em;
+    
+}
+.social i{
+    color: black;
+    padding: 0 0.5em;
+}
+.social i:active{
+    color: rgb(109, 109, 201);
+    transition-duration: 1ms;
+}
+.social i:hover{
+    color: rgb(0, 0, 150);
+    transition-duration: 600ms;
+}
