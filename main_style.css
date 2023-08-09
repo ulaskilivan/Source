@@ -1,20 +1,46 @@
+*{
+    font-family: 'Tektur', cursive;
+}
 .container{
     width: 50%;
     margin: 2rem auto 0 auto;
+    padding: 1rem 0;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
     border-radius: 2rem;
     text-align: center;
 }
 #hello{
-    font-family: 'Tektur', cursive;
     font-size: 10rem;
-    padding: 8rem 2rem;
     margin: 0;
+}
+.ulas{
+    position: relative;
+    bottom: 4rem;
+    font-size: 2.5rem;
+}
+.social-text{
+    position: relative;
+    font-size: 1.2rem;
+    left: 6.8rem;
+    bottom: 6.1rem;
+    z-index: 1;
+    color: transparent;
+    cursor:default;
+    transition: 700ms;
+}
+.social-text-appear{
+    color: black;
+    transition: 700ms;
 }
 .social{
     font-size: 2em;
-    padding-bottom: 1em;
-    
+    border-radius: 1rem;
+    box-shadow: 1px 1px 3px rgb(0,0,0,0.2);
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
 }
 .social i{
     color: black;
@@ -27,4 +53,77 @@
 .social i:hover{
     color: rgb(0, 0, 150);
     transition-duration: 600ms;
+}
+.footer{
+    display: flex;
+}
+.project-container{
+    width: 3rem;
+    height: 12rem;
+    margin:0 0 0 1.7rem;
+    box-shadow: 1px 1px 3px rgb(0,0,0,0.2);
+    display: flex;
+    padding:0.5rem 1.5rem 0 0;
+    border-radius: 1rem;
+}
+.project-container i{
+    font-size: 2.8rem;
+    color: black;
+}
+.project-container i:hover{
+    color:#0077b6 ;
+    transition: 500ms;
+}
+.project-text{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    cursor: default;
+    position: relative;
+    right: 1rem;
+    color: transparent;
+    transition: 600ms;
+}
+.project-text-appear{
+    color: black;
+    transition: 600ms;
+}
+.calculator-exp{
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid rgb(0,0,0,0.2);
+    border-radius: 0.5rem;
+    text-align: left;
+    padding: 0.2rem;
+    position: relative;
+    top: 0.5rem;
+    margin-left: 0.1rem;
+    display: none;
+    transition: 600ms;
+}
+.calculator-exp-appear{
+    display: block;
+    transition: 600ms;
+}
+.go-button{
+    position: relative;
+    bottom: 2rem;
+    left: 7.5rem;
+    font-size:1.5rem ;
+    padding: 0.3rem;
+}
+.contact{
+    position: relative;
+    left: 10rem;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 3px rgb(0,0,0,0.2);
+    width: 2.4rem;
+    cursor: pointer;
+    transition: width 0.5s;
+    transition: 400ms;
+}
+.contact:hover{
+    background: rgb(200,200,200);
+    transition: 400ms;
 }
