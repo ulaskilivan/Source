@@ -4,6 +4,9 @@ const projectContainer=document.querySelector(".project-container");
 const projectText=document.querySelector(".project-text");
 const calculatorButton=document.querySelector(".calculator-image");
 const calculatorExp=document.querySelector(".calculator-exp");
+const contact=document.querySelector(".contact");
+const contactImg=document.querySelector(".contimg");
+const contactContent=document.querySelector(".contact-content");
 socialContainer.addEventListener("mouseover",textAppearSocial);
 function textAppearSocial(){
     socialText.classList.toggle("social-text-appear");
@@ -23,4 +26,10 @@ function textRemoveProject(){
 calculatorButton.addEventListener("click",boxAppear);
 function boxAppear(){
     calculatorExp.classList.toggle("calculator-exp-appear")
+}
+contact.addEventListener("click",boxWider);
+function boxWider(cl){
+    contactImg.classList.toggle("cont-img");
+    contact.classList.toggle("contact-wider");
+    contactContent.classList.toggle("contact-content-appear");
 }
