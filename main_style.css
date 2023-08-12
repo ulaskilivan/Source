@@ -69,6 +69,7 @@
 .project-container i{
     font-size: 2.8rem;
     color: black;
+    transition: 500ms;
 }
 .project-container i:hover{
     color:#0077b6 ;
@@ -87,9 +88,13 @@
     color: black;
     transition: 600ms;
 }
+.footer1{
+    width: 50%;
+    display: flex;
+}
 .calculator-exp{
     width: 10rem;
-    height: 10rem;
+    height: fit-content;
     border: 1px solid rgb(0,0,0,0.2);
     border-radius: 0.5rem;
     text-align: left;
@@ -103,27 +108,4 @@
 .calculator-exp-appear{
     display: block;
     transition: 600ms;
-}
-.go-button{
-    position: relative;
-    bottom: 2rem;
-    left: 7.5rem;
-    font-size:1.5rem ;
-    padding: 0.3rem;
-}
-.contact{
-    position: relative;
-    left: 10rem;
-    padding: 0.5rem;
-    font-size: 2.5rem;
-    border-radius: 1rem;
-    box-shadow: 1px 1px 3px rgb(0,0,0,0.2);
-    width: 2.4rem;
-    cursor: pointer;
-    transition: width 0.5s;
-    transition: 400ms;
-}
-.contact:hover{
-    background: rgb(200,200,200);
-    transition: 400ms;
 }

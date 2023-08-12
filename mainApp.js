@@ -4,7 +4,6 @@ const projectContainer=document.querySelector(".project-container");
 const projectText=document.querySelector(".project-text");
 const calculatorButton=document.querySelector(".calculator-image");
 const calculatorExp=document.querySelector(".calculator-exp");
-const contact=document.querySelector(".contact");
 socialContainer.addEventListener("mouseover",textAppearSocial);
 function textAppearSocial(){
     socialText.classList.toggle("social-text-appear");
