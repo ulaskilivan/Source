@@ -28,6 +28,7 @@
         calculatorBack();
       }
  }
+
  function calculatorBack(){
     let calculation=screen.innerText;
     if(validOperands.includes(calculation.slice(-1))){
@@ -36,8 +37,16 @@
     if(validOperands.includes(calculation[0])&&calculation[0]!='-'){
         calculation=calculation.slice(1);
     }
+    calculation=eval(calculation);
     console.log(calculation);
-    screen.innerText=eval(calculation);
+    if(!Number.isInteger(calculation)){
+        screen.innerText=calculation.toFixed(4);
+    }
+    else{
+        screen.innerText=calculation;
+    }
+    
+    
  }
  eyeButton.addEventListener("click",whiterCal);
  function whiterCal(){

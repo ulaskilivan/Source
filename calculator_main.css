@@ -28,10 +28,10 @@
     font-size: 4rem;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow:hidden;
     text-align: center;
 
 }
@@ -62,7 +62,7 @@
     font-size: 3rem;
 }
 .button:hover{
-    background-color: #7b8a8b;
+    background-color: #8a8d8d;
     transition-duration: 500ms;
 }
 .button:active{
