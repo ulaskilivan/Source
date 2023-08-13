@@ -1,6 +1,8 @@
  var screen=document.getElementById("screen");
  var validKeyboard=['0','1','2','3','4','5','6','7','8','9','/','*','+','-'];
  var validOperands=['x','/','+','-','*','.','='];
+ const eyeButton=document.querySelector(".eye");
+ const calNum=document.querySelectorAll(".num");
  function clearScreen(){
      screen.innerText="";
  }
@@ -36,4 +38,11 @@
     }
     console.log(calculation);
     screen.innerText=eval(calculation);
+ }
+ eyeButton.addEventListener("click",whiterCal);
+ function whiterCal(){
+    calNum.forEach(makeWhite);
+    function makeWhite(numItem){
+        numItem.classList.toggle("button-whiter");
+    }
  }
